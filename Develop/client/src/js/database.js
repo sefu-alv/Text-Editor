@@ -39,6 +39,8 @@ export const getDb = async (content) => {
 
   const result = await store.getAll();
 
+   await text.done;
+
   return result;
 };
 

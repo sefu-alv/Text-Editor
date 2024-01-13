@@ -1,12 +1,14 @@
 // This variable will hold the `beforeinstallprompt` event
 let deferredPrompt;
 
+const butInstall = document.getElementById('buttonInstall');
 // Add an event handler to the `beforeinstallprompt` event
 window.addEventListener('beforeinstallprompt', (event) => {
  
   event.preventDefault();
   
   deferredPrompt = event;
+
   
   butInstall.style.display = 'block';
 });
@@ -19,12 +21,18 @@ butInstall.addEventListener('click', async () => {
   deferredPrompt.prompt();
   
   const choiceResult = await deferredPrompt.userChoice;
+
   if (choiceResult.outcome === 'accepted') {
-    console.log('User accepted the A2HS prompt');
-  } else {
-    console.log('User dismissed the A2HS prompt');
+    console.log('PWA setup accepted');
   }
-  deferredPrompt = null;
+  else {
+    console.log('PWA setup rejected');
+  }
+
+  
+  butInstall.style.display = 'none';
+
+
 });
 
 // Add an handler for the `appinstalled` event
