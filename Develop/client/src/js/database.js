@@ -20,12 +20,11 @@ export const putDb = async (content) => {
 
   const store = text.objectStore("jate");
 
-  const adding = await store.add(content );
+  const adding = await store.add({content});
 
   const result = adding;
  
   console.log("added to database" , result);
-
 };
 
 // getDb should return all the content in the database
@@ -39,7 +38,7 @@ export const getDb = async (content) => {
 
   const result = await store.getAll();
 
-   await text.done;
+  await text.done;
 
   return result;
 };
