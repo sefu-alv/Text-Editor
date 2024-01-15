@@ -6,7 +6,7 @@
 
 <div align=center>
 
-![Node.js Version](https://img.shields.io/badge/Node.js-v14-green)
+![Node.js Version](https://img.shields.io/badge/Node.js-v14-339933?logo=node.js)
 ![Webpack Version](https://img.shields.io/badge/Webpack-v5.58.1-blue)
 ![IndexedDB](https://img.shields.io/badge/IndexedDB-Supported-green)
 ![Service Workers](https://img.shields.io/badge/Service%20Workers-Yes-brightgreen)
