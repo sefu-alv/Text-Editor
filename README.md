@@ -1,5 +1,18 @@
 <div align=center>
-    #  [:clipboard: Text Editor Web Application  :clipboard:](https://text-editor-yu58.onrender.com/)
+    
+# [ :clipboard: Text Editor Web Application :clipboard:](https://text-editor-yu58.onrender.com/)
+
+</div>
+
+<div align=center>
+
+![Node.js Version](https://img.shields.io/badge/Node.js-v14-green)
+![Webpack Version](https://img.shields.io/badge/Webpack-v5.58.1-blue)
+![IndexedDB](https://img.shields.io/badge/IndexedDB-Supported-green)
+![Service Workers](https://img.shields.io/badge/Service%20Workers-Yes-brightgreen)
+![Render](https://img.shields.io/badge/Deployed%20on-Render-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 </div>
 
 ## Overview
