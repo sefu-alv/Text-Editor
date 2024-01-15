@@ -20,9 +20,9 @@ export const putDb = async (content) => {
 
   const store = text.objectStore("jate");
 
-  const adding = await store.add({content});
+  const request = store.put({ id: 1 , value: content});
 
-  const result = adding;
+  const result = await request;
  
   console.log("added to database" , result);
 };
@@ -40,7 +40,7 @@ export const getDb = async (content) => {
 
   await text.done;
 
-  return result;
+  return result?.value;
 };
 
 initdb();
